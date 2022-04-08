@@ -1,0 +1,45 @@
+package br.com.luiz.contrato.entitie;
+
+import java.util.Date;
+
+public class Contrato {
+	
+	private int numeroContrato;
+	private Date dataDoContrato;
+	private double valorTotalContrato;
+	
+	public Contrato() {
+	}
+
+	public Contrato(int numeroContrato, Date dataDoContrato, double valorTotalContrato) {
+		this.numeroContrato = numeroContrato;
+		this.dataDoContrato = dataDoContrato;
+		this.valorTotalContrato = valorTotalContrato;
+	}
+
+	public int getNumeroContrato() {
+		return numeroContrato;
+	}
+
+	public void setNumeroContrato(int numeroContrato) {
+		this.numeroContrato = numeroContrato;
+	}
+
+	public Date getDataDoContrato() {
+		return dataDoContrato;
+	}
+
+	public void setDataDoContrato(Date dataDoContrato) {
+		this.dataDoContrato = dataDoContrato;
+	}
+
+	public double getValorTotalContrato() {
+		return valorTotalContrato;
+	}
+
+	public void setValorTotalContrato(double valorTotalContrato) {
+		this.valorTotalContrato = valorTotalContrato;
+	}
+	
+
+}

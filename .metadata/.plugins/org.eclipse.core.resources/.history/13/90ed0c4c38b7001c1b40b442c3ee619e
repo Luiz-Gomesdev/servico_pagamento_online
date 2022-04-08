@@ -1,0 +1,8 @@
+package br.com.luiz.contrato.servicos;
+
+public interface ServicoPagamentoOnline {
+	
+	double taxaDePagamento(double amount);
+	double interest(double amount, int months);
+
+}

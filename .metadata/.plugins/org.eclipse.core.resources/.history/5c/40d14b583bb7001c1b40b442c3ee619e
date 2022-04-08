@@ -1,0 +1,31 @@
+package br.com.luiz.contrato.application;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		
+		SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+		
+		System.out.println("Entre com os dados do contrato");
+		System.out.print("Number: ");
+		int numero = sc.nextInt();
+		System.out.print("Data (dd/mm/yyyy): ");
+//		Date numeroDeMeses = sdf
+		System.out.print("Valor do Contrato: ");
+		double valorContrato = sc.nextDouble()
+		
+		
+		
+		
+		sc.close();
+	}
+
+}

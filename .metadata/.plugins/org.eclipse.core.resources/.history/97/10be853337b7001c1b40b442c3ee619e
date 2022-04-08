@@ -1,0 +1,58 @@
+package br.com.luiz.contrato.entitie;
+
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+
+public class Contrato {
+	
+	private int numero;
+	private Date data;
+	private double valorTotalContrato;
+	
+	private List<Parcela> parcelas = new ArrayList<>();
+	
+	private Parcela parcelas;
+	
+	public Contrato() {
+	}
+
+	public Contrato(int numeroContrato, Date data, double valorTotalContrato) {
+		this.numeroContrato = numeroContrato;
+		this.data = data;
+		this.valorTotalContrato = valorTotalContrato;
+	}
+
+	public int getNumeroContrato() {
+		return numeroContrato;
+	}
+
+	public void setNumeroContrato(int numeroContrato) {
+		this.numeroContrato = numeroContrato;
+	}
+
+	public Date getdata() {
+		return data;
+	}
+
+	public void setdata(Date data) {
+		this.data = data;
+	}
+
+	public double getValorTotalContrato() {
+		return valorTotalContrato;
+	}
+
+	public void setValorTotalContrato(double valorTotalContrato) {
+		this.valorTotalContrato = valorTotalContrato;
+	}
+
+	public Parcela getParcelas() {
+		return parcelas;
+	}
+
+	public void setParcelas(Parcela parcelas) {
+		this.parcelas = parcelas;
+	}
+
+}
